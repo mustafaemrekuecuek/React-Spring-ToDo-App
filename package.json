@@ -1,0 +1,22 @@
+{
+  "name": "to-do-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start": "concurrently \"cd ./Frontend && npm start\" \"cd ./Backend && ./mvnw spring-boot:run\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,66 @@
+/* ToDoForm.css */
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group textarea {
+    resize: vertical; /* Ermöglicht dem Benutzer, die Größe des Textbereichs vertikal anzupassen */
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="date"]:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none; /* Entfernt den Standardfokusrahmen */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .error-message {
+    color: #d9534f; /* Bootstrap 'danger' Farbe */
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fügt eine zusätzliche visuelle Rückmeldung für Benutzeraktionen hinzu */
+  button[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+  

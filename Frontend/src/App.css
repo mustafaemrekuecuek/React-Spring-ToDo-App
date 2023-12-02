@@ -1,0 +1,14 @@
+
+/* Hauptinhalt-Styling */
+.main-content {
+  margin-left: 20px; /* Etwas breiter als die Sidebar */
+  padding: 20px;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide {
+  display: none;
+}

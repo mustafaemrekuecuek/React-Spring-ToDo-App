@@ -1,0 +1,55 @@
+/* Navbar.css */
+.navbar {
+  width: 100%; /* Breite der Navbar auf volle Breite setzen */
+  background-color: #343a40; /* Hintergrundfarbe der Navbar */
+  padding: 1rem; /* Innenabstand der Navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schlagschatten für die Navbar */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Ermöglicht horizontale Ausrichtung der Listenelemente */
+  align-items: center; /* Zentriert die Links vertikal */
+  justify-content: center; /* Zentriert die Links horizontal */
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Abstand zwischen den Listenelementen */
+  transition: transform 0.2s;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px; /* Fügt etwas Polsterung um die Links hinzu */
+}
+
+.navbar ul li a:hover {
+  color: white;
+  background-color: #ffffff1a; /* Hintergrundfarbe beim Hover */
+  border-radius: 5px; /* Abgerundete Ecken beim Hover */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Größere Schriftgröße für bessere Sichtbarkeit */
+  font-weight: bold; /* Stärkeres Schriftgewicht für eine hervorgehobene Darstellung */
+  padding: 10px 15px; /* Mehr Polsterung für größere Klickflächen */
+  transition: color 0.2s, background-color 0.2s, transform 0.2s; /* Sanfte Übergänge für Hover-Effekte */
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus {
+  color: #007bff; /* Leuchtende Farbe für Hover- und Fokuszustände */
+  background-color: #ffffff2a; /* Subtile Hintergrundfarbe beim Hover */
+  border-radius: 5px; /* Abgerundete Ecken beim Hover */
+  transform: scale(1.05); /* Leichte Vergrößerung beim Überfahren mit der Maus */
+}
+
+.navbar ul li a.active {
+  color: #00d1b2; /* Hervorhebung für den aktiven Link */
+  border-bottom: 3px solid #00d1b2; /* Unterstrich für den aktiven Link */
+}

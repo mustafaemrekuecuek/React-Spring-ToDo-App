@@ -1,0 +1,150 @@
+.todo-list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .todo-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Kinder links ausrichten */
+    width: 100%;
+  }
+    
+  .todo-item {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .status-indicator {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .completed {
+    background-color: #28a745;
+  }
+  
+  .pending {
+    background-color: #dc3545;
+  }
+  
+  .todo-title {
+    font-weight: bold;
+    margin-right: 5%;
+  }
+  
+  .todo-title,
+  .todo-date {
+    margin-right: 20px; /* Etwas Platz zwischen den Elementen */
+  }
+
+  .todo-date {
+    color: #6c757d;
+    margin-right: 10%;
+  }
+  
+  .todo-description {
+    background-color: #f8f9fa;
+    margin-top: 5px;
+    padding: 0 10px; /* Set padding to 0 initially */
+    border-radius: 5px;
+    visibility: hidden; /* Verstecken, bis es angeklickt wird */
+    opacity: 0; /* Set opacity to 0 initially */
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: visibility 0s, opacity 0.3s linear, max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition-delay: 0.3s; /* Delay the transition for visibility */
+  }
+  
+  .todo-description.show {
+    padding: 10px; /* Add padding when description is shown */
+    visibility: visible;
+    opacity: 1;
+    max-height: 100px; /* Adjust as needed */
+    transition-delay: 0s; /* Do not delay the transition when showing the description */
+  }
+  
+  .todo-header button {
+    padding: 5px 10px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto; /* Schiebt den Button nach rechts */
+  }
+  
+  .todo-header button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-top: 10px;
+  }
+
+  .todo-header button.delete {
+    background-color: #dc3545;
+  }
+
+  .todo-header button:hover {
+    opacity: 0.8;
+  }
+
+  /* Hauptinhalt Container */
+.main-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Willkommensnachricht */
+.welcome-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.welcome-container h1 {
+  color: #343a40;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-container p {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+  .welcome-container button:hover {
+    background-color: #0056b3;
+  }
+  .welcome-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+
+  .button-container {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+  }
