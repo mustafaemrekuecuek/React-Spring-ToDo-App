@@ -51,10 +51,10 @@ Um dieses Projekt lokal auszuführen, folgen Sie diesen Schritten:
    git clone https://github.com/mustafaemrekuecuek/React-Spring-ToDoApp.git
    cd Frontend
 2. **Installieren Sie die Abhängigkeiten:**
-   Im Root-Verzeichnis und im Frontend-Verzeichnis des Projekts:
+   Im **Root**-Verzeichnis **und** im **Frontend**-Verzeichnis des Projekts:
    ```bash
    npm install
-4. **Starten sie das Projekt**
+4. **Starten sie das Projekt im Root-Verzeichnis**
    ```bash
    npm start
    
