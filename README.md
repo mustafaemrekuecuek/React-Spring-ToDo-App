@@ -62,6 +62,3 @@ Das Projekt wird nun auf http://localhost:3000 ausgeführt.
 
 ## Weiterentwicklung
 Dies ist mein erstes React-Projekt. Zukünftige Updates könnten zusätzliche Features oder Verbesserungen der Benutzeroberfläche umfassen.
-# React-ToDoApp
-# React-ToDoApp
-# React-ToDo-App
